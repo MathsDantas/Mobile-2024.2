@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/campo"
+        android:padding="16dp">
+
+        <!-- Foto de Perfil -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="270dp"
+            android:layout_height="145dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Foto de perfil"
+            android:src="@drawable/cristianoronaldo" />
+
+        <!-- Nome -->
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Usuário"
+            android:textSize="35sp"
+            android:textColor="#fefefe"
+            android:textStyle="bold"
+            android:background="@color/design_default_color_primary_dark"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp"/>
+
+        <!-- Descrição -->
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breve descrição do usuário."
+            android:textSize="27sp"
+            android:textColor="#fefefe"
+            android:background="@color/design_default_color_primary_dark"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="4dp"/>
+
+        <!-- Emprego Atual -->
+        <TextView
+            android:id="@+id/currentJobText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clube Atual: Al-Nassr"
+            android:background="@color/design_default_color_primary_dark"
+            android:textColor="#fefefe"
+            android:textSize="25sp"
+            android:paddingTop="8dp"/>
+
+        <!-- Experiências -->
+        <LinearLayout
+            android:id="@+id/experienceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="23dp">
+
+            <!-- Título -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recordes e Títulos:"
+                android:textColor="#fefefe"
+                android:background="@color/design_default_color_primary_dark"
+                android:textSize="25sp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Experiências serão adicionadas dinamicamente -->
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
